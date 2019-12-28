@@ -6,6 +6,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 import flask
+import os
 
 appname="telebot-stone"
 server = flask.Flask(__name__)
@@ -118,7 +119,7 @@ def index():
      return "Hello from Heroku!", 200
      
 
-if __name__ == "_main_":
+if __name__ == "__main__":
      server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
-#bot.polling()
+
     
