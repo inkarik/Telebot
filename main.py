@@ -54,7 +54,7 @@ def StartQuiz(msg):
     global season
     global database
     season = msg.text
-    random.shuffle(database[season])
+    random.shuffle(database[season][qNum])
     AskQuestion(msg)
 
 def AskQuestion(msg):
