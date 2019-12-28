@@ -2,3 +2,5 @@ pytelegrambotapi==3.6.6
 telebot==0.0.3
 flask
 gunicorn
+random
+firebase_admin
